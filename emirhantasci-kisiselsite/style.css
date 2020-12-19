@@ -1,0 +1,425 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #fff;
+}
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    
+}
+
+.img-fluid {
+	max-width: 100%;
+	height: auto;
+}
+
+.btn{
+    margin-top: 2rem;
+    
+    font-weight: 400;
+    display: inline-block;
+    background-color: transparent;
+    border: 2px solid transparent;
+    color: #fff;
+    border-radius: .7rem;
+    cursor: pointer;
+    transition: all .7s;
+}
+
+.btn-outline{
+    border-color: #fff;
+    background-color: transparent;
+    
+}
+
+.btn-social{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.btn-large{
+    font-size: 2rem;
+    padding: 2.8rem 1.6rem;
+}
+
+
+
+.btn-outline:hover{
+    color: #212529;
+    background-color: #fff;
+    
+    
+}
+
+.btn-primary{
+    color: #fff;
+    background-color: #18bc9c;
+    border-color: #18bc9c;
+    border-radius: .6rem;
+    padding: 1.4rem 1rem;
+
+}
+
+.btn-primary:hover{
+    color: #fff;
+    border-color: #128f76;
+    background-color: #128f76;
+    border-radius: .7rem;
+}
+
+.col{
+    float: left;
+    width: 25%;
+    padding: 1.2rem;
+    
+}
+
+
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+section{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    text-align: center;
+}
+
+/*NAVBAR*/
+
+nav{
+    background-color: #2C3E50;
+    color: #fff;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+    font-family: Montserrat;
+    position: fixed;
+    width: 100%;
+    z-index: 500;
+}
+
+#logo-box{
+    float: left;
+    padding-top: .5rem;
+}
+
+#logo-box .logo{
+    color: #fff;
+    font-weight: 700;
+    font-size: 3.2rem;
+    transition: color 2s, font-size 2s;
+}
+
+#logo-box .logo:hover{
+    color: antiquewhite;
+    font-size: 3.7rem;
+}
+
+#nav-links{
+    float:right;
+}
+
+#nav-links li{
+    display: inline-block;
+    margin: .4rem;
+}
+
+#nav-links .nav-link{
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    display: block;
+    padding: 1.6rem;
+    letter-spacing: .1rem;
+    transition: color, .3s;
+    
+}
+
+#nav-links .nav-link:hover{
+    color: #18bc9c;
+}
+
+/*Header*/
+
+header{
+    background-color: #18BC9C;
+    height: 800px;
+    padding-top: calc(112px + 10rem);
+    padding-bottom: 112px;
+    text-align: center;
+}
+
+header h1{
+    color: #fff;
+    font-size: 7.6rem;
+    
+}
+
+header h2{
+    color: #fff;
+    font-size: 2.8rem;
+    font-family: Lato;
+    text-align: center;
+    overflow: visible;
+}
+
+hr.star-light{
+    border-color: #fff;
+}
+
+hr.star-dark{
+    border-color: #18BC9C;
+}
+
+.star-light, .star-dark{
+    border: none;
+    border-top: .4rem solid white;
+    max-width: 25rem;
+    margin: 2.5rem auto;
+    overflow: visible;
+    height: 0;
+}
+
+.star-light::after{
+    background-color: #18BC9C;
+    color: antiquewhite;
+}
+
+.star-dark::after{
+    background-color: antiquewhite;
+    color: #18BC9C;
+    
+}
+
+.star-light::after, .star-dark::after{
+    content: "\f5fc";
+    font-family: "Font Awesome 5 Free";
+    
+    font-weight: 900;
+    font-size: 3.2rem;
+    position: relative;
+    top: -26px;
+    
+    padding: 0 1rem;
+}
+
+/*PORTFOLİO*/
+
+#portfolio{
+    padding-top: 6rem;
+    padding-bottom: 53rem;
+    background-color: antiquewhite;
+    text-align: center;
+    
+}
+
+#portfolio h2{
+    font-size: 4.8rem;
+    color: #2C3E50;
+}
+
+
+
+.portfolio-item{
+    
+    position: relative;
+}
+
+.portfolio-item img{
+    display: block;
+}
+
+.img-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #18BC9C;
+    opacity: 0;
+    transition: opacity, 1s ease;
+}
+
+.img-overlay .icon{
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.portfolio-item:hover .img-overlay{
+    opacity: 0.8;
+}
+
+/*ABOUT*/
+
+#about{
+    background-color: #18BC9C;
+    width: 100%;
+	
+}
+
+#about-text{
+    text-align: left;
+}
+
+#about h2{
+    font-size: 4.8rem;
+    color: white;
+}
+
+#about p{
+    color: white;
+    font-family: Lato;
+    font-size: 2rem;
+}
+
+#about .left{
+    float: left;
+    width: 50%;
+    padding-right: 2rem;
+    padding-left: 20rem;
+}
+
+#about .right{
+    float: right;
+    width: 50%;
+    padding-left: 2rem;
+    padding-right: 20rem;
+}
+
+.buttonun{
+    position: initial;
+}
+
+/*CONTACT ME*/
+
+#contact{
+    background-color: antiquewhite;
+    
+}
+
+#contact h2{
+    font-size: 4.8rem;
+    color: #2C3E50;
+}
+
+#contact-form{
+    width: 70%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#contact .form-group{
+    border-bottom: 1px solid grey;
+    padding-bottom: 3rem;
+    margin-bottom: 4rem;
+}
+
+.form-group input, .form-group textarea{
+    background-color: antiquewhite;
+    border: none;
+    display: block;
+    width: 100%;
+    font-size: 2.4rem;
+    
+}
+
+.form-group input:focus{
+    outline: 0;
+}
+
+/*FOOTER*/
+
+footer{ 
+    padding-top: 6rem;
+    padding-bottom: 25rem;
+    background-color: #2C3E50;
+    color: #fff;
+    text-align: center;
+}
+
+footer .col{
+    width: 33%;
+}
+
+
+footer h3{
+    font-size: 3rem;
+}
+
+footer h4{
+    font-size: 1.3rem;
+}
+
+footer ul li{
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+footer .english{
+    list-style: square;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    display: block;
+}
+
+.copyright{
+    background-color: #1a252f;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+    color: white;
+    text-align: center;
+}
+
+
